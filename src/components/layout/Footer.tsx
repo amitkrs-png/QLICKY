@@ -45,42 +45,42 @@ const Footer = () => {
           </div>
 
           {/* Right: Inline Contact Form */}
-          <div className="w-full max-w-xl lg:w-[600px] ml-auto border border-gray-200 dark:border-gray-700 rounded-xl p-8 shadow-lg bg-white dark:bg-gray-900 flex flex-col justify-center">
+          <div className="w-full max-w-full sm:max-w-xl lg:w-[600px] lg:ml-auto border border-gray-200 dark:border-gray-700 rounded-xl p-4 sm:p-8 shadow-lg bg-white dark:bg-gray-900 flex flex-col justify-center">
             <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-6 text-center">Contact Us</h3>
-            <form className="space-y-5">
+            <form className="space-y-4">
               <div className="relative">
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" htmlFor="footer-name">Name</label>
-                <span className="absolute left-3 top-9 text-gray-400"><User size={18} /></span>
+                <span className="absolute left-3 top-9 sm:top-9 text-gray-400"><User size={18} /></span>
                 <input
                   id="footer-name"
                   type="text"
-                  className="w-full pl-10 pr-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-primary-400 dark:bg-gray-800 dark:text-white transition"
+                  className="w-full pl-10 pr-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-primary-400 dark:bg-gray-800 dark:text-white transition text-sm"
                   placeholder="Your name"
                 />
               </div>
               <div className="relative">
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" htmlFor="footer-email">Email</label>
-                <span className="absolute left-3 top-9 text-gray-400"><Mail size={18} /></span>
+                <span className="absolute left-3 top-9 sm:top-9 text-gray-400"><Mail size={18} /></span>
                 <input
                   id="footer-email"
                   type="email"
-                  className="w-full pl-10 pr-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-primary-400 dark:bg-gray-800 dark:text-white transition"
+                  className="w-full pl-10 pr-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-primary-400 dark:bg-gray-800 dark:text-white transition text-sm"
                   placeholder="you@example.com"
                 />
               </div>
               <div className="relative">
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" htmlFor="footer-message">Message</label>
-                <span className="absolute left-3 top-9 text-gray-400"><MessageSquare size={18} /></span>
+                <span className="absolute left-3 top-9 sm:top-9 text-gray-400"><MessageSquare size={18} /></span>
                 <textarea
                   id="footer-message"
                   rows={4}
-                  className="w-full pl-10 pr-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-primary-400 dark:bg-gray-800 dark:text-white transition resize-none"
+                  className="w-full pl-10 pr-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-primary-400 dark:bg-gray-800 dark:text-white transition resize-none text-sm"
                   placeholder="Write your message here"
                 />
               </div>
               <button
                 type="submit"
-                className="w-full bg-primary-500 hover:bg-primary-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-150 flex items-center justify-center gap-2"
+                className="w-full bg-primary-500 hover:bg-primary-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md transition duration-150 flex items-center justify-center gap-2 text-sm"
               >
                 <Mail size={18} /> Send Message
               </button>
